@@ -225,6 +225,8 @@
     <Content Include="Views\Home\Four.cshtml" />
     <Content Include="Views\Home\Five.cshtml" />
     <Content Include="Views\Home\Six.cshtml" />
+    <Content Include="Views\Home\ClientNoStoreTrue.cshtml" />
+    <Content Include="Views\Home\ClientNoStoreFalse.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

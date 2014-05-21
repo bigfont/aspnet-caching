@@ -9,39 +9,37 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        #region Defaults
+        #region Default Views
         public ActionResult Index()
         {
             return View();
         }
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
-
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
         }
-
         #endregion
 
-        [OutputCache(Location = OutputCacheLocation.Any, Duration=0)]
+        #region Six OutputCacheLocations
+        [OutputCache(Location = OutputCacheLocation.Any, Duration = 0)]
         public ViewResult One()
         {
             return View();
         }
-        [OutputCache(Location = OutputCacheLocation.Client, Duration=0)]
+        [OutputCache(Location = OutputCacheLocation.Client, Duration = 0)]
         public ViewResult Two()
         {
             return View();
         }
-        [OutputCache(Location = OutputCacheLocation.Downstream, Duration=0)]
+        [OutputCache(Location = OutputCacheLocation.Downstream, Duration = 0)]
         public ViewResult Three()
         {
             return View();
@@ -61,5 +59,19 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+        #endregion
+
+        #region OutputCacheLocation.Client
+        [OutputCache(Location = OutputCacheLocation.Client, NoStore = true)]
+        public ViewResult ClientNoStoreTrue()
+        {
+            return View();
+        }
+        [OutputCache(Location = OutputCacheLocation.Client, NoStore = false)]
+        public ViewResult ClientNoStoreFalse()
+        {
+            return View();
+        }
+        #endregion
     }
 }
