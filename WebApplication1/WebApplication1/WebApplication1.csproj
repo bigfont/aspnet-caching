@@ -227,6 +227,7 @@
     <Content Include="Views\Home\Six.cshtml" />
     <Content Include="Views\Home\ClientNoStoreTrue.cshtml" />
     <Content Include="Views\Home\ClientNoStoreFalse.cshtml" />
+    <Content Include="Views\Home\VeryTransparent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

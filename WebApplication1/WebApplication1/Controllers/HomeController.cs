@@ -73,5 +73,15 @@ namespace WebApplication1.Controllers
             return View();
         }
         #endregion
+
+        #region Cache Profiles
+
+        [OutputCache(CacheProfile="VeryTransparent")]
+        public ViewResult VeryTransparent()
+        {
+            return View();
+        }
+
+        #endregion
     }
 }
