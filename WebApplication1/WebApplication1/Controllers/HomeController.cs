@@ -62,12 +62,12 @@ namespace WebApplication1.Controllers
         #endregion
 
         #region OutputCacheLocation.Client
-        [OutputCache(Location = OutputCacheLocation.Client, NoStore = true)]
+        [OutputCache(Location = OutputCacheLocation.Client, Duration = 3600, NoStore = true)]
         public ViewResult ClientNoStoreTrue()
         {
             return View();
         }
-        [OutputCache(Location = OutputCacheLocation.Client, NoStore = false)]
+        [OutputCache(Location = OutputCacheLocation.Client, Duration = 3600, NoStore = false)]
         public ViewResult ClientNoStoreFalse()
         {
             return View();
