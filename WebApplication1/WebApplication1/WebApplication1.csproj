@@ -219,6 +219,12 @@
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\One.cshtml" />
+    <Content Include="Views\Home\Two.cshtml" />
+    <Content Include="Views\Home\Three.cshtml" />
+    <Content Include="Views\Home\Four.cshtml" />
+    <Content Include="Views\Home\Five.cshtml" />
+    <Content Include="Views\Home\Six.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

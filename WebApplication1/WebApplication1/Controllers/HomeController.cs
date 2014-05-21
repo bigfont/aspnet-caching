@@ -9,7 +9,7 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        [OutputCache(Location=OutputCacheLocation.Client, Duration=0)]
+        #region Defaults
         public ActionResult Index()
         {
             return View();
@@ -26,6 +26,39 @@ namespace WebApplication1.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        #endregion
+
+        [OutputCache(Location = OutputCacheLocation.Any)]
+        public ViewResult One()
+        {
+            return View();
+        }
+        [OutputCache(Location = OutputCacheLocation.Client)]
+        public ViewResult Two()
+        {
+            return View();
+        }
+        [OutputCache(Location = OutputCacheLocation.Downstream)]
+        public ViewResult Three()
+        {
+            return View();
+        }
+        [OutputCache(Location = OutputCacheLocation.None)]
+        public ViewResult Four()
+        {
+            return View();
+        }
+        [OutputCache(Location = OutputCacheLocation.Server)]
+        public ViewResult Five()
+        {
+            return View();
+        }
+        [OutputCache(Location = OutputCacheLocation.ServerAndClient)]
+        public ViewResult Six()
+        {
             return View();
         }
     }
