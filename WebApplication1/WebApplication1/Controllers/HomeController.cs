@@ -31,32 +31,32 @@ namespace WebApplication1.Controllers
 
         #endregion
 
-        [OutputCache(Location = OutputCacheLocation.Any)]
+        [OutputCache(Location = OutputCacheLocation.Any, Duration=0)]
         public ViewResult One()
         {
             return View();
         }
-        [OutputCache(Location = OutputCacheLocation.Client)]
+        [OutputCache(Location = OutputCacheLocation.Client, Duration=0)]
         public ViewResult Two()
         {
             return View();
         }
-        [OutputCache(Location = OutputCacheLocation.Downstream)]
+        [OutputCache(Location = OutputCacheLocation.Downstream, Duration=0)]
         public ViewResult Three()
         {
             return View();
         }
-        [OutputCache(Location = OutputCacheLocation.None)]
+        [OutputCache(Location = OutputCacheLocation.None, Duration = 0)]
         public ViewResult Four()
         {
             return View();
         }
-        [OutputCache(Location = OutputCacheLocation.Server)]
+        [OutputCache(Location = OutputCacheLocation.Server, Duration = 0)]
         public ViewResult Five()
         {
             return View();
         }
-        [OutputCache(Location = OutputCacheLocation.ServerAndClient)]
+        [OutputCache(Location = OutputCacheLocation.ServerAndClient, Duration = 0)]
         public ViewResult Six()
         {
             return View();
